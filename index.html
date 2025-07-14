@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfólio | Carlos Eduardo (CADU)</title>
+    <meta name="description" content="Desenvolvedor Front-End apaixonado por criar interfaces modernas, responsivas e com identidade.">
+    <meta name="author" content="Carlos Eduardo">
+    <meta name="robots" content="index, follow">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <a href="#inicio">CADU</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="container">
+            <div class="content">
+                <div class="texto" data-aos="fade-right" data-aos-duration="3000">
+                    <h1>Transformando conceitos em interfaces que aliam performance e identidade</h1>
+                    <h4 id="typing-text"></h4>
+                </div>
+                <div class="foto">
+                    <img src="imagens/foto.jpg" alt="minha foto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="content" data-aos="fade-up">
+                <div class="titulo">
+                    <h4>Sobre</h4>
+                    <h1>mim</h1>
+                </div>
+                <div class="sobre-mim">
+                    <p>Em uma tarde tranquila, o vento dançava entre as folhas, sussurrando histórias que só a natureza entendia. Um gato preguiçoso observava tudo deitado ao sol, como se soubesse mais do mundo do que deixava transparecer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <div class="container">
+            <div class="content" data-aos="fade-up">
+                <div class="titulo">
+                    <h2>Projetos</h2>
+                    <h1>recentes</h1>
+                </div>
+                <div class="area-projeto">
+                    <div class="projeto">
+                        <h3>Doceria</h3>
+                        <p>Um site simples com HTML e CSS para apresentar produtos e captar pedidos.</p>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                    </div>
+                    <div class="projeto">
+                        <h3>Site informativo</h3>
+                        <p>Este site que você está vendo agora, feito com HTML, CSS, JS e AOS.js.</p>
+                        <a href="https://www.google.com/?hl=pt-BR" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="content" data-aos="fade-up">
+                <div class="titulo">
+                    <h2>Entre em</h2>
+                    <h1>Contato</h1>
+                </div>
+                <div class="formulario">
+                    <form action="https://formspree.io/f/mnnvevgj" method="post">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                        <input type="text" name="sobrenome" placeholder="Seu sobrenome" required>
+                        <input type="email" name="email" placeholder="Seu email" required>
+                        <textarea id="mensagem" name="mensagem" placeholder="Como posso te ajudar?" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="content">
+                <p>&copy; Carlos <span id="year"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
