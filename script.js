@@ -1,11 +1,15 @@
-// Ano automático no rodapé
+window.addEventListener("load", () => {
+  document.getElementById("preloader").style.display = "none";
+});
+
+// Automatic year in the footer
 document.addEventListener("DOMContentLoaded", () => {
   const yearText = document.getElementById("year");
   yearText.textContent = new Date().getFullYear();
 });
 
-// Efeito de digitação
-const text = "Desenvolvedor front-end apaixonado por criar experiências únicas.";
+// Typing effect
+const text = "Front-end developer passionate about crafting unique experiences.";
 const typingTarget = document.getElementById("typing-text");
 let i = 0;
 

@@ -1,99 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Portfólio | Carlos Eduardo (CADU)</title>
-    <meta name="description" content="Desenvolvedor Front-End apaixonado por criar interfaces modernas, responsivas e com identidade.">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Portfolio | Carlos Eduardo (CADU)</title>
+    <meta name="description" content="Front-End developer passionate about creating modern, responsive interfaces with personality.">
     <meta name="author" content="Carlos Eduardo">
     <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Portfólio | Carlos Eduardo (CADU)">
+    <meta property="og:description" content="Desenvolvedor front-end apaixonado por criar experiências únicas e responsivas.">
+    <meta property="og:image" content="URL_DA_IMAGEM_DE_DESTAQUE">
+    <meta property="og:url" content="URL_DO_SITE">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
     <header>
         <div class="container">
             <div class="content">
                 <div class="logo">
-                    <a href="#inicio">CADU</a>
+                    <a href="#home">CADU</a>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section class="inicio" id="inicio">
+    <section class="inicio" id="home">
         <div class="container">
             <div class="content">
                 <div class="texto" data-aos="fade-right" data-aos-duration="3000">
-                    <h1>Transformando conceitos em interfaces que aliam performance e identidade</h1>
+                    <h1>Turning concepts into interfaces that combine performance and personality</h1>
                     <h4 id="typing-text"></h4>
                 </div>
                 <div class="foto">
-                    <img src="imagens/foto.jpg" alt="minha foto">
+                    <img src="imagens/foto.jpg" alt="my photo">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="sobre" id="sobre">
+    <section class="sobre" id="about">
         <div class="container">
             <div class="content" data-aos="fade-up">
                 <div class="titulo">
-                    <h4>Sobre</h4>
-                    <h1>mim</h1>
+                    <h4>About</h4>
+                    <h1>me</h1>
                 </div>
                 <div class="sobre-mim">
-                    <p>Em uma tarde tranquila, o vento dançava entre as folhas, sussurrando histórias que só a natureza entendia. Um gato preguiçoso observava tudo deitado ao sol, como se soubesse mais do mundo do que deixava transparecer.</p>
+                    <p>Hello! I'm Carlos Eduardo, also known as CADU. I'm a front-end developer focused on building intuitive, responsive, and accessible user interfaces. My goal is to merge creativity and functionality in every project I build, delivering real value to users and clients.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="projetos" id="projetos">
+    <section class="projetos" id="projects">
         <div class="container">
             <div class="content" data-aos="fade-up">
                 <div class="titulo">
-                    <h2>Projetos</h2>
-                    <h1>recentes</h1>
+                    <h2>Projects</h2>
+                    <h1>recent</h1>
                 </div>
                 <div class="area-projeto">
                     <div class="projeto">
-                        <h3>Doceria</h3>
-                        <p>Um site simples com HTML e CSS para apresentar produtos e captar pedidos.</p>
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                        <h3>Sweet Shop</h3>
+                        <p>A simple website using HTML and CSS to showcase products and receive orders.</p>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">View project</a>
                     </div>
                     <div class="projeto">
-                        <h3>Site informativo</h3>
-                        <p>Este site que você está vendo agora, feito com HTML, CSS, JS e AOS.js.</p>
-                        <a href="https://www.google.com/?hl=pt-BR" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                        <h3>Informative Website</h3>
+                        <p>This website you're currently viewing, built with HTML, CSS, JS, and AOS.js.</p>
+                        <a href="https://www.google.com/?hl=en" target="_blank" rel="noopener noreferrer">View project</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contato" id="contato">
+    <section class="contato" id="contact">
         <div class="container">
             <div class="content" data-aos="fade-up">
                 <div class="titulo">
-                    <h2>Entre em</h2>
-                    <h1>Contato</h1>
+                    <h2>Let's</h2>
+                    <h1>Connect</h1>
                 </div>
                 <div class="formulario">
                     <form action="https://formspree.io/f/mnnvevgj" method="post">
-                        <input type="text" name="nome" placeholder="Seu nome" required>
-                        <input type="text" name="sobrenome" placeholder="Seu sobrenome" required>
-                        <input type="email" name="email" placeholder="Seu email" required>
-                        <textarea id="mensagem" name="mensagem" placeholder="Como posso te ajudar?" required></textarea>
-                        <button type="submit">Enviar</button>
+                        <input type="text" name="firstname" placeholder="Your first name" required>
+                        <input type="text" name="lastname" placeholder="Your last name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea id="mensagem" name="message" placeholder="How can I help you?" required></textarea>
+                        <button type="submit">Send</button>
                     </form>
                 </div>
             </div>
@@ -101,6 +112,11 @@
     </section>
 
     <footer>
+        <div class="social">
+            <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/seuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:seuemail@email.com"><i class="fas fa-envelope"></i></a>
+        </div>
         <div class="container">
             <div class="content">
                 <p>&copy; Carlos <span id="year"></span></p>
