@@ -46,3 +46,27 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault(); // impede o envio padrão
+
+    const formData = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/mnnvevgj", {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      window.location.href = "thank.html"; // redireciona após sucesso
+    } else {
+      alert("There was a problem submitting your form. Please try again.");
+    }
+  });
+});
