@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,115 +7,127 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Portfolio | Carlos Eduardo (CADU)</title>
-    <meta name="description" content="Front-End developer passionate about creating modern, responsive interfaces with personality.">
-    <meta name="author" content="Carlos Eduardo">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Portfólio | Carlos Eduardo (CADU)">
-    <meta property="og:description" content="Desenvolvedor front-end apaixonado por criar experiências únicas e responsivas.">
-    <meta property="og:image" content="URL_DA_IMAGEM_DE_DESTAQUE">
-    <meta property="og:url" content="URL_DO_SITE">
-    <meta property="og:type" content="website">
 </head>
-
 <body>
     <div id="preloader">
         <div class="loader"></div>
     </div>
-
     <header>
         <div class="container">
             <div class="content">
                 <div class="logo">
-                    <a href="#home">CADU</a>
+                    <a href="#home" aria-label="Back to home">CADU</a>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" aria-label="Go to About section" class="nav-link">About</a></li>
+                        <li><a href="#projects" aria-label="Go to Projects section" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" aria-label="Go to Contact section" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
-    <section class="inicio" id="home">
-        <div class="container">
-            <div class="content">
-                <div class="texto" data-aos="fade-right" data-aos-duration="3000">
-                    <h1>Turning concepts into interfaces that combine performance and personality</h1>
-                    <h4 id="typing-text"></h4>
-                </div>
-                <div class="foto">
-                    <img src="imagens/foto.jpg" alt="my photo">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="sobre" id="about">
-        <div class="container">
-            <div class="content" data-aos="fade-up">
-                <div class="titulo">
-                    <h4>About</h4>
-                    <h1>me</h1>
-                </div>
-                <div class="sobre-mim">
-                    <p>Hello! I'm Carlos Eduardo, also known as CADU. I'm a front-end developer focused on building intuitive, responsive, and accessible user interfaces. My goal is to merge creativity and functionality in every project I build, delivering real value to users and clients.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projetos" id="projects">
-        <div class="container">
-            <div class="content" data-aos="fade-up">
-                <div class="titulo">
-                    <h2>Projects</h2>
-                    <h1>recent</h1>
-                </div>
-                <div class="area-projeto">
-                    <div class="projeto">
-                        <h3>Sweet Shop</h3>
-                        <p>A simple website using HTML and CSS to showcase products and receive orders.</p>
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">View project</a>
+    <main aria-label="Main content">
+        <section class="inicio" id="home">
+            <div class="container">
+                <div class="content">
+                    <div class="texto" data-aos="fade-right" data-aos-duration="3000">
+                        <h1>Turning concepts into interfaces that combine performance and personality</h1>
+                        <h4 id="typing-text"></h4>
                     </div>
-                    <div class="projeto">
-                        <h3>Informative Website</h3>
-                        <p>This website you're currently viewing, built with HTML, CSS, JS, and AOS.js.</p>
-                        <a href="https://www.google.com/?hl=en" target="_blank" rel="noopener noreferrer">View project</a>
+                    <div class="foto">
+                        <img src="imagens/foto.jpg" alt="Photo of Carlos Eduardo, front-end developer" width="400" height="400" loading="lazy">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="contato" id="contact">
-        <div class="container">
-            <div class="content" data-aos="fade-up">
-                <div class="titulo">
-                    <h2>Let's</h2>
-                    <h1>Connect</h1>
-                </div>
-                <div class="formulario">
-                    <form action="https://formspree.io/f/mnnvevgj" method="post">
-                        <input type="text" name="firstname" placeholder="Your first name" required>
-                        <input type="text" name="lastname" placeholder="Your last name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <textarea id="mensagem" name="message" placeholder="How can I help you?" required></textarea>
-                        <button type="submit">Send</button>
-                    </form>
+        <section class="sobre" id="about">
+            <div class="container">
+                <div class="content" data-aos="fade-up">
+                    <div class="titulo">
+                        <h2>About</h2>
+                        <h1>Me</h1>
+                    </div>
+                    <div class="sobre-mim estilizado">
+                        <p>
+                        <span class="emoji">👨‍💻</span> Hello! I'm <strong>Carlos Eduardo</strong>, also known as <strong>CADU</strong>.<br><br>
+                        I'm a <span class="highlight">Front-End Developer</span> focused on building <strong>intuitive</strong>, <strong>responsive</strong>, and <strong>accessible</strong> user interfaces.<br><br>
+                        I enjoy merging <span class="highlight">creativity</span> with <span class="highlight">functionality</span> to deliver clean and engaging digital experiences.<br><br>
+                        <em>Let’s create something amazing together!</em>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="projetos" id="projects">
+            <div class="container">
+                <div class="content" data-aos="fade-up">
+                    <div class="titulo">
+                        <h2>Projects</h2>
+                        <h1>recent</h1>
+                    </div>
+                    <div class="area-projeto">
+                        <div class="projeto">
+                            <h3>Sweet Shop</h3>
+                            <p>A simple website using HTML and CSS to showcase products and receive orders.</p>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">View project</a>
+                        </div>
+                        <div class="projeto">
+                            <h3>Informative Website</h3>
+                            <p>This website you're currently viewing, built with HTML, CSS, JS, and AOS.js.</p>
+                            <a href="https://www.google.com/?hl=en" target="_blank" rel="noopener noreferrer">View project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato" id="contact">
+            <div class="container">
+                <div class="content" data-aos="fade-up">
+                    <div class="titulo">
+                        <h2>Let's</h2>
+                        <h1>Connect</h1>
+                        <p class="subtexto">I'd love to hear from you! Feel free to reach out using the form below 👇</p>
+                    </div>
+                    <div class="formulario">
+                        <form action="https://formspree.io/f/mnnvevgj" method="post" role="form" aria-label="Contact form">
+                        <div class="campo">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="firstname" placeholder="First name" required>
+                        </div>
+                        <div class="campo">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="lastname" placeholder="Last name" required>
+                        </div>
+                        <div class="campo">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Your email" required>
+                        </div>
+                        <div class="campo">
+                            <i class="fas fa-comment-dots"></i>
+                            <textarea id="mensagem" name="message" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" aria-label="Send message"><i class="fas fa-paper-plane"></i> Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="social">
-            <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/seuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:seuemail@email.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/EduMoonz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/carlos-eduardo-rodrigues-santos-1a8899205/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:carlos.rsantos@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
         <div class="container">
             <div class="content">
@@ -124,11 +136,10 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
 </body>
 </html>

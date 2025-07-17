@@ -1,24 +1,48 @@
+// Preloader
 window.addEventListener("load", () => {
   document.getElementById("preloader").style.display = "none";
 });
 
-// Automatic year in the footer
+// Ano automático no rodapé
 document.addEventListener("DOMContentLoaded", () => {
   const yearText = document.getElementById("year");
   yearText.textContent = new Date().getFullYear();
 });
 
-// Typing effect
-const text = "Front-end developer passionate about crafting unique experiences.";
-const typingTarget = document.getElementById("typing-text");
-let i = 0;
+// Efeito de digitação
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "Front-end developer passionate about crafting unique experiences.";
+  const typingTarget = document.getElementById("typing-text");
+  let i = 0;
 
-function type() {
-  if (i < text.length) {
-    typingTarget.innerHTML += text.charAt(i);
-    i++;
-    setTimeout(type, 40);
+  function type() {
+    if (i < text.length) {
+      typingTarget.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 40);
+    }
   }
-}
 
-type();
+  type();
+});
+
+// Destacar o link ativo no menu
+window.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  let current = "";
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
