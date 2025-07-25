@@ -253,7 +253,7 @@ nav ul li a.active::after {
 .projeto a {
   display: inline-block;
   margin-top: 0.8rem;
-  color: var(--primary);
+  color: var(--background);
   font-weight: bold;
   text-decoration: underline;
   transition: 0.3s;
