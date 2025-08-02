@@ -1,41 +1,41 @@
-# 🌐 Portfólio - Carlos Eduardo (CADU)
+# 🌐 Portfolio - Carlos Eduardo (CADU)
 
-Bem-vindo ao meu portfólio! Este site foi desenvolvido para apresentar meus projetos, habilidades e facilitar o contato profissional. Ele combina **design responsivo**, **animações suaves** e **boas práticas de acessibilidade** para criar uma experiência envolvente e moderna.
-
----
-
-## ✨ Demonstração
-
-🔗 [Acesse o site](https://edumoonz.github.io/portfolio/)
+Welcome to my portfolio! This website was created to showcase my projects, skills, and make professional contact easier. It combines responsive design, smooth animations, and good accessibility practices to deliver an engaging and modern experience.
 
 ---
 
-## 📌 Funcionalidades
+## ✨ Demo
 
-- ✅ Layout totalmente responsivo (mobile-first)
-- ✅ Animações ao rolar com AOS.js
-- ✅ Efeito de digitação com JavaScript puro
-- ✅ Preloader com animação
-- ✅ Destaque automático do menu ao rolar a página
-- ✅ Formulário funcional integrado ao Formspree
-- ✅ Acessibilidade: uso de `aria-label`, contraste adequado, foco visível
-- ✅ Código modular (HTML, CSS, JS separados)
+🔗 [Visit the site](https://edumoonz.github.io/portfolio/)
 
 ---
 
-## 🧰 Tecnologias utilizadas
+## 📌 Features
 
-- HTML5 semântico
-- CSS3 com variáveis e media queries
-- JavaScript puro (vanilla JS)
+- ✅ Fully responsive layout (mobile-first)
+- ✅ Scroll animations with AOS.js
+- ✅ Typing effect using vanilla JavaScript
+- ✅ Animated preloader
+- ✅ Automatic menu highlight on scroll
+- ✅ Functional contact form integrated with Formspree
+- ✅ Accessibility: use of `aria-label`, proper contrast, visible focus
+- ✅ Modular code (separate HTML, CSS, JS)
+
+---
+
+## 🧰 Technologies Used
+
+- Semantic HTML5
+- CSS3 with variables and media queries
+- Vanilla JavaScript
 - [AOS.js](https://michalsnik.github.io/aos/)
 - [Font Awesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/specimen/Libertinus+Mono)
-- Formspree (formulário funcional)
+- Formspree (functional form)
 
 ---
 
-## 📁 Estrutura de diretórios
+## 📁 Directory Structure
 
 ```plaintext
 ├── imagens/
